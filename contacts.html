@@ -17,57 +17,72 @@
 </head>
 <body class="page">
 
-    <header class="page__header">
-        <a href="index.html" class="site-title">Алгоритми та структури даних</a>
-    </header>
+    <main class="page-grid">
 
-    <aside class="page__sidebar">
-        <h2>Розділи сайту</h2>
-        <nav>
-            <ul>
-                <li><a href="index.html">Головна</a></li>
-                <li><a href="about.html">Про напрям</a></li>
-                <li><a href="pages/resources.html">Ресурси</a></li>
-                <li><a href="pages/entities.html">Символьні сутності</a></li>
-                <li><a href="comparison.html">Порівняння</a></li>
-                <li><a href="gallery.html">Галерея</a></li>
-                <li><a href="contacts.html" class="active">Контакти</a></li>
-                <li><a href="application.html">Подати заявку</a></li>
-            </ul>
-        </nav>
-    </aside>
-
-    <main class="page__main container">
-        <section class="card">
-            <h1>Зворотний зв'язок</h1>
-
-            <form action="https://httpbin.org/post" method="post">
-
-                <label for="name">Ім'я</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Електронна пошта</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="subject">Тема звернення</label>
-                <select id="subject" name="subject" required>
-                    <option value="question">Запитання</option>
-                    <option value="suggestion">Пропозиція</option>
-                    <option value="error">Повідомлення про помилку на сайті</option>
-                </select>
-
-                <label for="message">Текст повідомлення</label>
-                <textarea id="message" name="message" rows="5" minlength="10" required></textarea>
-
-                <label style="display: flex; align-items: center; gap: 8px; margin-bottom: var(--space-4);">
-                    <input type="checkbox" name="consent" required style="margin: 0;">
-                    Погоджуюсь на обробку персональних даних
-                </label>
-
-                <button type="submit" class="btn">Надіслати</button>
-
-            </form>
+        <!-- Шапка сайту та навігація (на всю ширину, 12 колонок) -->
+        <section class="hero span-12">
+            <div class="site-title" style="font-size: clamp(1.75rem, 1.2rem + 2.5vw, 3rem); font-weight: 700; margin-bottom: var(--space-4); text-transform: uppercase; letter-spacing: 1px;">
+                АЛГОРИТМИ ТА СТРУКТУРИ ДАНИХ
+            </div>
+            <nav class="main-nav">
+                <ul class="menu-horizontal">
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="about.html">Про напрям</a></li>
+                    <li><a href="pages/resources.html">Ресурси</a></li>
+                    <li><a href="pages/entities.html">Символьні сутності</a></li>
+                    <li><a href="comparison.html">Порівняння</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="contacts.html" style="background-color: rgba(255, 255, 255, 0.2);">Контакти</a></li>
+                    <li><a href="application.html">Подати заявку</a></li>
+                </ul>
+            </nav>
         </section>
+
+        <!-- Бічна панель: статистика та заклик до дії (4 колонки) -->
+        <aside class="aside span-4">
+            <div class="stats">
+                <div class="stats__item">12 алгоритмів</div>
+                <div class="stats__item">8 структур даних</div>
+                <div class="stats__item">25 джерел</div>
+                <div class="stats__item">5 розділів</div>
+            </div>
+            <a href="application.html" class="cta-button">Подати заявку</a>
+        </aside>
+
+        <!-- Основний контент (8 колонок) -->
+        <section class="content span-8">
+            <div class="card">
+                <h1>Зворотний зв'язок</h1>
+
+                <form action="https://httpbin.org/post" method="post" style="display: flex; flex-direction: column; gap: 10px;">
+
+                    <label for="name">Ім'я</label>
+                    <input type="text" id="name" name="name" required style="padding: 8px; border: 1px solid var(--color-border-dark); border-radius: 4px;">
+
+                    <label for="email">Електронна пошта</label>
+                    <input type="email" id="email" name="email" required style="padding: 8px; border: 1px solid var(--color-border-dark); border-radius: 4px;">
+
+                    <label for="subject">Тема звернення</label>
+                    <select id="subject" name="subject" required style="padding: 8px; border: 1px solid var(--color-border-dark); border-radius: 4px;">
+                        <option value="question">Запитання</option>
+                        <option value="suggestion">Пропозиція</option>
+                        <option value="error">Повідомлення про помилку на сайті</option>
+                    </select>
+
+                    <label for="message">Текст повідомлення</label>
+                    <textarea id="message" name="message" rows="5" minlength="10" required style="padding: 8px; border: 1px solid var(--color-border-dark); border-radius: 4px; resize: vertical;"></textarea>
+
+                    <label style="display: flex; align-items: center; gap: 8px; margin-top: 10px; margin-bottom: var(--space-4);">
+                        <input type="checkbox" name="consent" required style="margin: 0;">
+                        Погоджуюсь на обробку персональних даних
+                    </label>
+
+                    <button type="submit" class="btn" style="align-self: flex-start;">Надіслати</button>
+
+                </form>
+            </div>
+        </section>
+
     </main>
 
     <footer class="page__footer">
@@ -78,5 +93,6 @@
         </address>
         <p>&copy; 2026 Стеценко Вікторія</p>
     </footer>
+
 </body>
 </html>

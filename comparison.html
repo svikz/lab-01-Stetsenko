@@ -7,144 +7,121 @@
     <meta name="author" content="Віка Стеценко">
     <title>Порівняння мов програмування та алгоритмів</title>
     <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Додано канонічне посилання та Open Graph метадані -->
+    <link rel="canonical" href="https://svikz.github.io/lab-01-Stetsenko/comparison.html">
+    <meta property="og:title" content="Порівняння - Основи алгоритмів">
+    <meta property="og:description" content="Порівняння мов програмування та алгоритмів за основними характеристиками.">
+    <meta property="og:image" content="https://svikz.github.io/lab-01-Stetsenko/img/og-preview.jpg">
+    <meta property="og:url" content="https://svikz.github.io/lab-01-Stetsenko/comparison.html">
+    <meta property="og:type" content="website">
 </head>
 
 <body class="page">
 
-    <header class="page__header">
-        <a href="index.html" class="site-title">Алгоритми та структури даних</a>
-    </header>
+    <main class="page-grid">
 
-    <aside class="page__sidebar">
-        <h2>Розділи сайту</h2>
-        <nav>
-            <ul>
-                <li><a href="index.html">Головна</a></li>
-                <li><a href="about.html">Про напрям</a></li>
-                <li><a href="pages/resources.html">Ресурси</a></li>
-                <li><a href="pages/entities.html">Символьні сутності</a></li>
-                <li><a href="comparison.html" class="active">Порівняння</a></li>
-                <li><a href="gallery.html">Галерея</a></li>
-                <li><a href="contacts.html">Контакти</a></li>
-                <li><a href="application.html">Подати заявку</a></li>
-            </ul>
-        </nav>
-    </aside>
+        <!-- Шапка сайту та навігація (на всю ширину, 12 колонок) -->
+        <section class="hero span-12">
+            <div class="site-title" style="font-size: clamp(1.75rem, 1.2rem + 2.5vw, 3rem); font-weight: 700; margin-bottom: var(--space-4); text-transform: uppercase; letter-spacing: 1px;">
+                АЛГОРИТМИ ТА СТРУКТУРИ ДАНИХ
+            </div>
+            <nav class="main-nav">
+                <ul class="menu-horizontal">
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="about.html">Про напрям</a></li>
+                    <li><a href="pages/resources.html">Ресурси</a></li>
+                    <li><a href="pages/entities.html">Символьні сутності</a></li>
+                    <li><a href="comparison.html" style="background-color: rgba(255, 255, 255, 0.2);">Порівняння</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="contacts.html">Контакти</a></li>
+                    <li><a href="application.html">Подати заявку</a></li>
+                </ul>
+            </nav>
+        </section>
 
-    <main class="page__main container">
+        <!-- Бічна панель: статистика та заклик до дії (4 колонки) -->
+        <aside class="aside span-4">
+            <div class="stats">
+                <div class="stats__item">12 алгоритмів</div>
+                <div class="stats__item">8 структур даних</div>
+                <div class="stats__item">25 джерел</div>
+                <div class="stats__item">5 розділів</div>
+            </div>
+            <a href="application.html" class="cta-button">Подати заявку</a>
+        </aside>
 
-        <h1>Порівняння технологій</h1>
+        <!-- Основний контент (8 колонок) -->
+        <section class="content span-8">
+            <article class="card">
+                <h2>Порівняння технологій</h2>
 
-        <h2>Порівняння мов програмування</h2>
+                <h3 style="margin-top: var(--space-4);">Порівняння мов програмування</h3>
 
-        <table class="comparison-table">
-            <caption>Порівняння мов програмування</caption>
+                <!-- Обгортка для адаптивності таблиці на мобільних -->
+                <div style="overflow-x: auto; margin-bottom: var(--space-4);">
+                    <table class="comparison-table" style="width: 100%; border-collapse: collapse; text-align: left;">
+                        <caption style="text-align: left; font-weight: bold; margin-bottom: var(--space-2);">Порівняння мов програмування</caption>
 
-            <thead>
-                <tr>
-                    <th scope="col">Мова програмування</th>
-                    <th scope="col">Тип</th>
-                    <th scope="col">Застосування</th>
-                    <th scope="col">Рівень складності</th>
-                    <th scope="col">Рік створення</th>
-                </tr>
-            </thead>
+                        <thead>
+                            <tr style="border-bottom: 2px solid var(--color-primary);">
+                                <th scope="col" style="padding: 8px;">Мова програмування</th>
+                                <th scope="col" style="padding: 8px;">Тип</th>
+                                <th scope="col" style="padding: 8px;">Застосування</th>
+                                <th scope="col" style="padding: 8px;">Рівень складності</th>
+                                <th scope="col" style="padding: 8px;">Рік створення</th>
+                            </tr>
+                        </thead>
 
-            <tbody>
-                <tr>
-                    <th scope="row">Python</th>
-                    <td>Інтерпретована</td>
-                    <td>Веброзробка, наука про дані, автоматизація</td>
-                    <td>Низький</td>
-                    <td>1991</td>
-                </tr>
+                        <tbody>
+                            <tr style="border-bottom: 1px solid var(--color-border);">
+                                <th scope="row" style="padding: 8px;">Python</th>
+                                <td style="padding: 8px;">Інтерпретована</td>
+                                <td style="padding: 8px;">Веброзробка, наука про дані, автоматизація</td>
+                                <td style="padding: 8px;">Низький</td>
+                                <td style="padding: 8px;">1991</td>
+                            </tr>
 
-                <tr>
-                    <th scope="row">Java</th>
-                    <td>Компільована</td>
-                    <td>Веброзробка, мобільна розробка, бізнес-додатки</td>
-                    <td>Високий</td>
-                    <td>1995</td>
-                </tr>
+                            <tr style="border-bottom: 1px solid var(--color-border);">
+                                <th scope="row" style="padding: 8px;">Java</th>
+                                <td style="padding: 8px;">Компільована</td>
+                                <td style="padding: 8px;">Веброзробка, мобільна розробка, бізнес-додатки</td>
+                                <td style="padding: 8px;">Високий</td>
+                                <td style="padding: 8px;">1995</td>
+                            </tr>
 
-                <tr>
-                    <th scope="row">C++</th>
-                    <td>Компільована</td>
-                    <td>Системне програмування, ігри, високопродуктивні додатки</td>
-                    <td>Високий</td>
-                    <td>1985</td>
-                </tr>
+                            <tr style="border-bottom: 1px solid var(--color-border);">
+                                <th scope="row" style="padding: 8px;">C++</th>
+                                <td style="padding: 8px;">Компільована</td>
+                                <td style="padding: 8px;">Системне програмування, ігри, високопродуктивні додатки</td>
+                                <td style="padding: 8px;">Високий</td>
+                                <td style="padding: 8px;">1985</td>
+                            </tr>
 
-                <tr>
-                    <th scope="row">JavaScript</th>
-                    <td>Інтерпретована</td>
-                    <td>Веброзробка, фронтенд, серверна розробка</td>
-                    <td>Середній</td>
-                    <td>1995</td>
-                </tr>
-            </tbody>
+                            <tr style="border-bottom: 1px solid var(--color-border);">
+                                <th scope="row" style="padding: 8px;">JavaScript</th>
+                                <td style="padding: 8px;">Інтерпретована</td>
+                                <td style="padding: 8px;">Веброзробка, фронтенд, серверна розробка</td>
+                                <td style="padding: 8px;">Середній</td>
+                                <td style="padding: 8px;">1995</td>
+                            </tr>
+                        </tbody>
 
-            <tfoot>
-                <tr>
-                    <td colspan="5">Дані наведено для загального ознайомлення та можуть змінюватися з часом.</td>
-                </tr>
-            </tfoot>
-        </table>
+                        <tfoot>
+                            <tr>
+                                <td colspan="5" style="padding: 8px; font-size: 0.85em; color: var(--color-text-muted);">Дані наведено для загального ознайомлення та можуть змінюватися з часом.</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
 
-        <h2>Порівняння складності алгоритмів</h2>
+                <h3 style="margin-top: var(--space-4);">Порівняння складності алгоритмів</h3>
 
-        <table class="comparison-table">
-            <caption>Порівняння складності алгоритмів</caption>
+                <div style="overflow-x: auto;">
+                    <table class="comparison-table" style="width: 100%; border-collapse: collapse; text-align: left;">
+                        <caption style="text-align: left; font-weight: bold; margin-bottom: var(--space-2);">Порівняння складності алгоритмів</caption>
 
-            <thead>
-                <tr>
-                    <th scope="col" rowspan="2">Алгоритм</th>
-                    <th scope="colgroup" colspan="2">Складність</th>
-                </tr>
-
-                <tr>
-                    <th scope="col">Найкраща</th>
-                    <th scope="col">Найгірша</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr>
-                    <th scope="row">Бульбашкове сортування</th>
-                    <td>O(n)</td>
-                    <td>O(n²)</td>
-                </tr>
-
-                <tr>
-                    <th scope="row">Лінійний пошук</th>
-                    <td>O(1)</td>
-                    <td>O(n)</td>
-                </tr>
-
-                <tr>
-                    <th scope="row">Бінарний пошук</th>
-                    <td>O(1)</td>
-                    <td>O(log n)</td>
-                </tr>
-            </tbody>
-
-            <tfoot>
-                <tr>
-                    <td colspan="3">Дані наведено для загального ознайомлення та можуть змінюватися з часом.</td>
-                </tr>
-            </tfoot>
-        </table>
-
-    </main>
-
-    <footer class="page__footer">
-        <address>
-            Стеценко Вікторія група КН-21<br>
-            <a href="mailto:viktoriastecenko@gmail.com">viktoriastecenko@gmail.com</a><br>
-            <a href="tel:+380673456789">+38 (067) 345-67-89</a>
-        </address>
-        <p>&copy; 2026 Стеценко Вікторія</p>
-    </footer>
-
-</body>
-</html>
+                        <thead>
+                            <tr style="border-bottom: 2px solid var(--color-primary);">
+                                <th scope="col" rowspan="2" style="padding: 8px; vertical-align: bottom;">Алгоритм</th>
+                                <th scope="colgroup" colspan

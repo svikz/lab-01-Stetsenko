@@ -2,9 +2,11 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Корисні ресурси для вивчення мов програмування, алгоритмів і парадигм, а також офіційні сайти та навчальні матеріали для програмістів.">
     <title>Корисні ресурси з мов програмування та парадигм</title>
     <link rel="stylesheet" href="../css/style.css">
+    
     <link rel="canonical" href="https://svikz.github.io/lab-01-Stetsenko/pages/resources.html">
 
     <meta property="og:title" content="Корисні ресурси - Основи алгоритмів">
@@ -16,180 +18,179 @@
 
 <body class="page">
 
-    <header class="page__header">
-        <a href="../index.html" class="site-title">Алгоритми та структури даних</a>
-    </header>
+    <main class="page-grid">
 
-    <aside class="page__sidebar">
-        <h2>Розділи сайту</h2>
-        <nav>
-            <ul> 
-                <li><a href="../index.html">Головна</a></li>
-                <li><a href="../about.html">Про напрям</a></li>
-                <li><a href="resources.html" class="active">Ресурси</a></li>
-                <li><a href="entities.html">Символьні сутності</a></li>
-                <li><a href="../comparison.html">Порівняння</a></li>
-                <li><a href="../gallery.html">Галерея</a></li>
-                <li><a href="../contacts.html">Контакти</a></li>
-                <li><a href="../application.html">Подати заявку</a></li>
-            </ul>
-        </nav>
-    </aside>
-
-    <main class="page__main container">
-        <ul class="classification-list"></ul>
-        <h1>Ресурси</h1>
-
-        <section class="card">
-            <h2>Порядок вивчення програмування</h2>
-            <ol>
-                <li>Вивчити основи програмування</li>
-                <li>Ознайомитися з мовами програмування</li>
-                <li>Вивчити основні парадигми</li>
-                <li>Навчитися працювати з алгоритмами</li>
-                <li>Створювати власні програми</li>
-            </ol>
+        <!-- Шапка сайту та навігація (на всю ширину, 12 колонок) -->
+        <section class="hero span-12">
+            <div class="site-title" style="font-size: clamp(1.75rem, 1.2rem + 2.5vw, 3rem); font-weight: 700; margin-bottom: var(--space-4); text-transform: uppercase; letter-spacing: 1px;">
+                АЛГОРИТМИ ТА СТРУКТУРИ ДАНИХ
+            </div>
+            <nav class="main-nav">
+                <!-- Зверніть увагу на шляхи ../ для виходу з папки pages/ -->
+                <ul class="menu-horizontal">
+                    <li><a href="../index.html">Головна</a></li>
+                    <li><a href="../about.html">Про напрям</a></li>
+                    <li><a href="resources.html" style="background-color: rgba(255, 255, 255, 0.2);">Ресурси</a></li>
+                    <li><a href="entities.html">Символьні сутності</a></li>
+                    <li><a href="../comparison.html">Порівняння</a></li>
+                    <li><a href="../gallery.html">Галерея</a></li>
+                    <li><a href="../contacts.html">Контакти</a></li>
+                    <li><a href="../application.html">Подати заявку</a></li>
+                </ul>
+            </nav>
         </section>
 
-        <section class="card">
-            <h2>Популярні мови програмування</h2>
-            <ul>
-                <li>Python
-                    <ul>
-                        <li>Простий синтаксис</li>
-                        <li>Велика кількість бібліотек</li>
-                    </ul>
-                </li>
-                <li>Java
-                    <ul>
-                        <li>Об'єктно-орієнтоване програмування</li>
-                        <li>Кросплатформність</li>
-                    </ul>
-                </li>
-                <li>C++
-                    <ul>
-                        <li>Висока продуктивність</li>
-                        <li>Робота з пам'яттю</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-
-        <section class="card">
-            <h2>Глосарій</h2>
-            <dl>
-                <dt>Мова програмування</dt>
-                <dd>Формальна мова для створення програм та алгоритмів.</dd>
-
-                <dt>Парадигма</dt>
-                <dd>Підхід до організації та написання програмного коду.</dd>
-
-                <dt>Алгоритм</dt>
-                <dd>Послідовність дій для розв'язання певної задачі.</dd>
-
-                <dt>Змінна</dt>
-                <dd>Іменована область пам'яті для зберігання значення.</dd>
-
-                <dt>Функція</dt>
-                <dd>Окремий блок коду, який виконує певне завдання.</dd>
-            </dl>
-        </section>
-
-        <section class="card">
-            <h2>Корисні джерела</h2>
-            <ul>
-                <li>
-                    <a href="https://developer.mozilla.org/" target="_blank" rel="noopener">
-                        MDN Web Docs
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.python.org/" target="_blank" rel="noopener">
-                        Python
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.java.com/" target="_blank" rel="noopener">
-                        Java
-                    </a>
-                </li>
-                <li>
-                    <a href="https://isocpp.org/" target="_blank" rel="noopener">
-                        C++
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.w3schools.com/" target="_blank" rel="noopener">
-                        W3Schools
-                    </a>
-                </li>
-            </ul>
-        </section>
-
-        <section class="card">
-            <h2>Нові теми лабораторної роботи</h2>
-
-            <h3>Етапи розробки програми</h3>
-            <ol reversed>
-                <li>Тестування та відлагодження</li>
-                <li>Написання коду</li>
-                <li>Проектування алгоритму</li>
-                <li>Реалізація алгоритму</li>
-                <li>Проектування структури програми</li>
-                <li>Визначення вимог та постановка задачі</li>
-            </ol>
-
-            <h3>Парадигми програмування</h3>
-            <ul>
-                <li>
-                    Імперативне програмування
-                    <ul>
-                        <li>Послідовне виконання команд</li>
-                        <li>Зміна стану програми</li>
-                    </ul>
-                </li>
-                <li>
-                    Декларативне програмування
-                    <ul>
-                        <li>Опис того, що потрібно зробити</li>
-                        <li>Використання логіки та правил</li>
-                    </ul>
-                </li>
-            </ul>
-
-            <h3>Терміни лабораторної роботи</h3>
-            <article>
-                <h4>Семантичний HTML</h4>
-                <p>
-                    Використання тегів HTML відповідно до їхнього значення та призначення.
-                </p>
-            </article>
-
-            <dl>
-                <dt>Доступність</dt>
-                <dd>Ступінь, до якого програма може бути використана людьми з різними можливостями</dd>
-
-                <dt>Таблиця</dt>
-                <dd>Структурований спосіб представлення даних у вигляді рядків і стовпців</dd>
-
-                <dt>Colspan</dt>
-                <dd>Атрибут HTML, який дозволяє об'єднувати кілька стовпців у таблиці</dd>
-
-                <dt>Rowspan</dt>
-                <dd>Атрибут HTML, який дозволяє об'єднувати кілька рядків у таблиці</dd>
-            </dl>
-        </section>
-
-        <aside class="card">
-            <h2>Дивіться також</h2>
-            <p>
-                Для порівняння мов програмування та алгоритмів
-                перейдіть до сторінки «Порівняння».
-            </p>
-            <p>
-                <a href="../comparison.html">Порівняння технологій</a>
-            </p>
+        <!-- Бічна панель: статистика та заклик до дії (4 колонки) -->
+        <aside class="aside span-4">
+            <div class="stats">
+                <div class="stats__item">12 алгоритмів</div>
+                <div class="stats__item">8 структур даних</div>
+                <div class="stats__item">25 джерел</div>
+                <div class="stats__item">5 розділів</div>
+            </div>
+            <a href="../application.html" class="cta-button">Подати заявку</a>
         </aside>
+
+        <!-- Основний контент (8 колонок) -->
+        <section class="content span-8">
+            
+            <div class="card">
+                <ul class="classification-list"></ul>
+                <h1 style="margin-top: 0; margin-bottom: 0;">Ресурси</h1>
+            </div>
+
+            <section class="card">
+                <h2 style="margin-top: 0;">Порядок вивчення програмування</h2>
+                <ol>
+                    <li>Вивчити основи програмування</li>
+                    <li>Ознайомитися з мовами програмування</li>
+                    <li>Вивчити основні парадигми</li>
+                    <li>Навчитися працювати з алгоритмами</li>
+                    <li>Створювати власні програми</li>
+                </ol>
+            </section>
+
+            <section class="card">
+                <h2 style="margin-top: 0;">Популярні мови програмування</h2>
+                <ul>
+                    <li>Python
+                        <ul>
+                            <li>Простий синтаксис</li>
+                            <li>Велика кількість бібліотек</li>
+                        </ul>
+                    </li>
+                    <li>Java
+                        <ul>
+                            <li>Об'єктно-орієнтоване програмування</li>
+                            <li>Кросплатформність</li>
+                        </ul>
+                    </li>
+                    <li>C++
+                        <ul>
+                            <li>Висока продуктивність</li>
+                            <li>Робота з пам'яттю</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="card">
+                <h2 style="margin-top: 0;">Глосарій</h2>
+                <dl>
+                    <dt style="font-weight: bold; color: var(--color-primary);">Мова програмування</dt>
+                    <dd style="margin-bottom: var(--space-2);">Формальна мова для створення програм та алгоритмів.</dd>
+
+                    <dt style="font-weight: bold; color: var(--color-primary);">Парадигма</dt>
+                    <dd style="margin-bottom: var(--space-2);">Підхід до організації та написання програмного коду.</dd>
+
+                    <dt style="font-weight: bold; color: var(--color-primary);">Алгоритм</dt>
+                    <dd style="margin-bottom: var(--space-2);">Послідовність дій для розв'язання певної задачі.</dd>
+
+                    <dt style="font-weight: bold; color: var(--color-primary);">Змінна</dt>
+                    <dd style="margin-bottom: var(--space-2);">Іменована область пам'яті для зберігання значення.</dd>
+
+                    <dt style="font-weight: bold; color: var(--color-primary);">Функція</dt>
+                    <dd>Окремий блок коду, який виконує певне завдання.</dd>
+                </dl>
+            </section>
+
+            <section class="card">
+                <h2 style="margin-top: 0;">Корисні джерела</h2>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/" target="_blank" rel="noopener">MDN Web Docs</a></li>
+                    <li><a href="https://www.python.org/" target="_blank" rel="noopener">Python</a></li>
+                    <li><a href="https://www.java.com/" target="_blank" rel="noopener">Java</a></li>
+                    <li><a href="https://isocpp.org/" target="_blank" rel="noopener">C++</a></li>
+                    <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener">W3Schools</a></li>
+                </ul>
+            </section>
+
+            <section class="card">
+                <h2 style="margin-top: 0;">Нові теми лабораторної роботи</h2>
+
+                <h3 style="margin-top: var(--space-3);">Етапи розробки програми</h3>
+                <ol reversed>
+                    <li>Тестування та відлагодження</li>
+                    <li>Написання коду</li>
+                    <li>Проектування алгоритму</li>
+                    <li>Реалізація алгоритму</li>
+                    <li>Проектування структури програми</li>
+                    <li>Визначення вимог та постановка задачі</li>
+                </ol>
+
+                <h3 style="margin-top: var(--space-3);">Парадигми програмування</h3>
+                <ul>
+                    <li>
+                        Імперативне програмування
+                        <ul>
+                            <li>Послідовне виконання команд</li>
+                            <li>Зміна стану програми</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Декларативне програмування
+                        <ul>
+                            <li>Опис того, що потрібно зробити</li>
+                            <li>Використання логіки та правил</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3 style="margin-top: var(--space-3);">Терміни лабораторної роботи</h3>
+                <article style="background: var(--color-primary-soft); padding: var(--space-3); border-radius: 8px; margin-bottom: var(--space-3);">
+                    <h4 style="margin-top: 0;">Семантичний HTML</h4>
+                    <p style="margin-bottom: 0;">
+                        Використання тегів HTML відповідно до їхнього значення та призначення.
+                    </p>
+                </article>
+
+                <dl>
+                    <dt style="font-weight: bold; color: var(--color-primary);">Доступність</dt>
+                    <dd style="margin-bottom: var(--space-2);">Ступінь, до якого програма може бути використана людьми з різними можливостями</dd>
+
+                    <dt style="font-weight: bold; color: var(--color-primary);">Таблиця</dt>
+                    <dd style="margin-bottom: var(--space-2);">Структурований спосіб представлення даних у вигляді рядків і стовпців</dd>
+
+                    <dt style="font-weight: bold; color: var(--color-primary);">Colspan</dt>
+                    <dd style="margin-bottom: var(--space-2);">Атрибут HTML, який дозволяє об'єднувати кілька стовпців у таблиці</dd>
+
+                    <dt style="font-weight: bold; color: var(--color-primary);">Rowspan</dt>
+                    <dd>Атрибут HTML, який дозволяє об'єднувати кілька рядків у таблиці</dd>
+                </dl>
+            </section>
+
+            <aside class="card">
+                <h2 style="margin-top: 0;">Дивіться також</h2>
+                <p>
+                    Для порівняння мов програмування та алгоритмів
+                    перейдіть до сторінки «Порівняння».
+                </p>
+                <p>
+                    <a href="../comparison.html" style="font-weight: bold;">Порівняння технологій</a>
+                </p>
+            </aside>
+
+        </section>
 
     </main>
 

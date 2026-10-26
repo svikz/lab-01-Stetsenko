@@ -17,151 +17,166 @@
 
 <body class="page">
 
-    <header class="page__header">
-        <a href="index.html" class="site-title">Алгоритми та структури даних</a>
-    </header>
-
-    <aside class="page__sidebar">
-        <h2>Розділи сайту</h2>
-        <nav>
-            <ul class="menu">
-                <li><a href="index.html">Головна</a></li>
-                <li><a href="about.html">Про напрям</a></li>
-                <li><a href="pages/resources.html">Ресурси</a></li>
-                <li><a href="pages/entities.html">Символьні сутності</a></li>
-                <li><a href="comparison.html">Порівняння</a></li>
-                <li><a href="gallery.html" class="active">Галерея</a></li>
-                <li class="menu__contacts"><a href="contacts.html">Контакти</a></li> 
-                <li><a href="application.html">Подати заявку</a></li>
-            </ul>
-        </nav>
-    </aside>
-
-    <main class="page__main container">
-
-        <h1>Галерея</h1>
-
-        <img src="img/icon.svg"
-             alt="Іконка програмування"
-             width="100"
-             height="100"
-             style="margin-bottom: var(--space-4);">
-
-        <div class="card-grid">
-            
-            <article class="card">
-                <figure>
-                    <picture>
-                        <source srcset="img/originals/pic-1.webp" type="image/webp">
-                        <img src="img/originals/pic-1.jpg"
-                             alt="Зображення про програмування"
-                             width="800"
-                             height="600">
-                    </picture>
-                    <figcaption>Зображення 1</figcaption>
-                </figure>
-                <p>Короткий опис першого зображення.</p>
-                <a href="#" class="btn">Детальніше</a>
-            </article>
-
-            <article class="card">
-                <figure>
-                    <picture>
-                        <source srcset="img/originals/pic-2.webp" type="image/webp">
-                        <img src="img/originals/pic-2.jpg"
-                             alt="Мова програмування Python"
-                             width="800"
-                             height="600">
-                    </picture>
-                    <figcaption>Зображення 2</figcaption>
-                </figure>
-                <p>Python — високорівнева мова програмування загального призначення з динамічною строгою типізацією. Вона дуже популярна завдяки простоті синтаксису.</p>
-                <a href="#" class="btn">Детальніше</a>
-            </article>
-
-            <article class="card">
-                <figure>
-                    <picture>
-                        <source srcset="img/originals/pic-3.webp" type="image/webp">
-                        <img src="img/originals/pic-3.jpg"
-                             alt="Мова програмування Java"
-                             width="800"
-                             height="600">
-                    </picture>
-                    <figcaption>Зображення 3</figcaption>
-                </figure>
-                <p>Java — об'єктно-орієнтована мова програмування, випущена компанією Sun Microsystems.</p>
-                <a href="#" class="btn">Детальніше</a>
-            </article>
-
-            <article class="card">
-                <figure>
-                    <picture>
-                        <source srcset="img/originals/pic-4.webp" type="image/webp">
-                        <img src="img/originals/pic-4.jpg"
-                             alt="Мова програмування C++"
-                             width="800"
-                             height="600">
-                    </picture>
-                    <figcaption>Зображення 4</figcaption>
-                </figure>
-                <p>C++ використовується для створення високопродуктивного програмного забезпечення, ігрових рушіїв та системних додатків. Це одна з найскладніших, але найпотужніших мов у світі.</p>
-                <a href="#" class="btn">Детальніше</a>
-            </article>
-
-            <article class="card">
-                <figure>
-                    <picture>
-                        <source srcset="img/originals/pic-5.webp" type="image/webp">
-                        <img src="img/originals/pic-5.jpg"
-                             alt="Веброзробка"
-                             width="800"
-                             height="600">
-                    </picture>
-                    <figcaption>Зображення 5</figcaption>
-                </figure>
-                <p>Основи сучасної веброзробки.</p>
-                <a href="#" class="btn">Детальніше</a>
-            </article>
-            
-            <article class="card">
-                <figure>
-                    <picture>
-                        <source srcset="img/originals/pic-6.webp" type="image/webp">
-                        <img src="img/originals/pic-6.jpg"
-                             alt="Розробка програмного забезпечення"
-                             width="800"
-                             height="600">
-                    </picture>
-                    <figcaption>Зображення 6</figcaption>
-                </figure>
-                <p>Процес розробки складного програмного забезпечення вимагає глибоких знань архітектури.</p>
-                <a href="#" class="btn">Детальніше</a>
-            </article>
-        </div>
-       
-        <section style="margin-top: var(--space-5);">
-            <h2>Відео</h2>
-            <video controls preload="metadata" width="800" style="max-width: 100%; border-radius: 10px;">
-                <source src="video/demo.mp4" type="video/mp4">
-                <track kind="subtitles"
-                       srclang="uk"
-                       label="Українська"
-                       src="video/demo-uk.vtt">
-            </video>
+    <main class="page-grid">
+        
+        <!-- Шапка сайту та навігація (на всю ширину, 12 колонок) -->
+        <section class="hero span-12">
+            <div class="site-title" style="font-size: clamp(1.75rem, 1.2rem + 2.5vw, 3rem); font-weight: 700; margin-bottom: var(--space-4); text-transform: uppercase; letter-spacing: 1px;">
+                АЛГОРИТМИ ТА СТРУКТУРИ ДАНИХ
+            </div>
+            <nav class="main-nav">
+                <ul class="menu-horizontal">
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="about.html">Про напрям</a></li>
+                    <li><a href="pages/resources.html">Ресурси</a></li>
+                    <li><a href="pages/entities.html">Символьні сутності</a></li>
+                    <li><a href="comparison.html">Порівняння</a></li>
+                    <li><a href="gallery.html" style="background-color: rgba(255, 255, 255, 0.2);">Галерея</a></li>
+                    <li><a href="contacts.html">Контакти</a></li>
+                    <li><a href="application.html">Подати заявку</a></li>
+                </ul>
+            </nav>
         </section>
 
-        <section style="margin-top: var(--space-4);">
-            <h2>Карта</h2>
-            <iframe
-                src="https://www.openstreetmap.org/export/embed.html?bbox=30.70%2C46.45%2C30.80%2C46.50&amp;layer=mapnik"
-                title="Карта Одеси"
-                width="800"
-                height="600"
-                style="max-width: 100%; border: 1px solid var(--color-border); border-radius: 10px;"
-                loading="lazy"
-                sandbox="allow-same-origin allow-scripts">
-            </iframe>
+        <!-- Бічна панель: статистика та заклик до дії (4 колонки) -->
+        <aside class="aside span-4">
+            <div class="stats">
+                <div class="stats__item">12 алгоритмів</div>
+                <div class="stats__item">8 структур даних</div>
+                <div class="stats__item">25 джерел</div>
+                <div class="stats__item">5 розділів</div>
+            </div>
+            <a href="application.html" class="cta-button">Подати заявку</a>
+        </aside>
+
+        <!-- Основний контент (8 колонок) -->
+        <section class="content span-8">
+
+            <h2>Галерея</h2>
+
+            <img src="img/icon.svg"
+                 alt="Іконка програмування"
+                 width="100"
+                 height="100"
+                 style="margin-bottom: var(--space-4);">
+
+            <div class="card-grid">
+                
+                <article class="card">
+                    <figure>
+                        <picture>
+                            <source srcset="img/originals/pic-1.webp" type="image/webp">
+                            <img src="img/originals/pic-1.jpg"
+                                 alt="Зображення про програмування"
+                                 width="800"
+                                 height="600">
+                        </picture>
+                        <figcaption>Зображення 1</figcaption>
+                    </figure>
+                    <p>Короткий опис першого зображення.</p>
+                    <a href="#" class="btn">Детальніше</a>
+                </article>
+
+                <article class="card">
+                    <figure>
+                        <picture>
+                            <source srcset="img/originals/pic-2.webp" type="image/webp">
+                            <img src="img/originals/pic-2.jpg"
+                                 alt="Мова програмування Python"
+                                 width="800"
+                                 height="600">
+                        </picture>
+                        <figcaption>Зображення 2</figcaption>
+                    </figure>
+                    <p>Python — високорівнева мова програмування загального призначення з динамічною строгою типізацією. Вона дуже популярна завдяки простоті синтаксису.</p>
+                    <a href="#" class="btn">Детальніше</a>
+                </article>
+
+                <article class="card">
+                    <figure>
+                        <picture>
+                            <source srcset="img/originals/pic-3.webp" type="image/webp">
+                            <img src="img/originals/pic-3.jpg"
+                                 alt="Мова програмування Java"
+                                 width="800"
+                                 height="600">
+                        </picture>
+                        <figcaption>Зображення 3</figcaption>
+                    </figure>
+                    <p>Java — об'єктно-орієнтована мова програмування, випущена компанією Sun Microsystems.</p>
+                    <a href="#" class="btn">Детальніше</a>
+                </article>
+
+                <article class="card">
+                    <figure>
+                        <picture>
+                            <source srcset="img/originals/pic-4.webp" type="image/webp">
+                            <img src="img/originals/pic-4.jpg"
+                                 alt="Мова програмування C++"
+                                 width="800"
+                                 height="600">
+                        </picture>
+                        <figcaption>Зображення 4</figcaption>
+                    </figure>
+                    <p>C++ використовується для створення високопродуктивного програмного забезпечення, ігрових рушіїв та системних додатків. Це одна з найскладніших, але найпотужніших мов у світі.</p>
+                    <a href="#" class="btn">Детальніше</a>
+                </article>
+
+                <article class="card">
+                    <figure>
+                        <picture>
+                            <source srcset="img/originals/pic-5.webp" type="image/webp">
+                            <img src="img/originals/pic-5.jpg"
+                                 alt="Веброзробка"
+                                 width="800"
+                                 height="600">
+                        </picture>
+                        <figcaption>Зображення 5</figcaption>
+                    </figure>
+                    <p>Основи сучасної веброзробки.</p>
+                    <a href="#" class="btn">Детальніше</a>
+                </article>
+                
+                <article class="card">
+                    <figure>
+                        <picture>
+                            <source srcset="img/originals/pic-6.webp" type="image/webp">
+                            <img src="img/originals/pic-6.jpg"
+                                 alt="Розробка програмного забезпечення"
+                                 width="800"
+                                 height="600">
+                        </picture>
+                        <figcaption>Зображення 6</figcaption>
+                    </figure>
+                    <p>Процес розробки складного програмного забезпечення вимагає глибоких знань архітектури.</p>
+                    <a href="#" class="btn">Детальніше</a>
+                </article>
+            </div>
+           
+            <section style="margin-top: var(--space-5);">
+                <h2>Відео</h2>
+                <video controls preload="metadata" width="800" style="max-width: 100%; border-radius: 10px;">
+                    <source src="video/demo.mp4" type="video/mp4">
+                    <track kind="subtitles"
+                           srclang="uk"
+                           label="Українська"
+                           src="video/demo-uk.vtt">
+                </video>
+            </section>
+
+            <section style="margin-top: var(--space-4);">
+                <h2>Карта</h2>
+                <iframe
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=30.70%2C46.45%2C30.80%2C46.50&amp;layer=mapnik"
+                    title="Карта Одеси"
+                    width="800"
+                    height="600"
+                    style="max-width: 100%; border: 1px solid var(--color-border); border-radius: 10px;"
+                    loading="lazy"
+                    sandbox="allow-same-origin allow-scripts">
+                </iframe>
+            </section>
+
         </section>
 
     </main>
@@ -176,7 +191,6 @@
                 +38 (067) 345-67-89
             </a>
         </address>
-
         <p>&copy; 2026 Стеценко Вікторія</p>
     </footer>
 

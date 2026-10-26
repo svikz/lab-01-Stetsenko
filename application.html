@@ -7,128 +7,144 @@
     <meta name="author" content="Віка Стеценко">
     <title>Заявка на участь у проєкті</title>
     <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Додано канонічне посилання та Open Graph метадані -->
+    <link rel="canonical" href="https://svikz.github.io/lab-01-Stetsenko/application.html">
+    <meta property="og:title" content="Подати заявку - Основи алгоритмів">
+    <meta property="og:description" content="Заявка на участь у навчальному проєкті з алгоритмів, програмування та структур даних.">
+    <meta property="og:image" content="https://svikz.github.io/lab-01-Stetsenko/img/og-preview.jpg">
+    <meta property="og:url" content="https://svikz.github.io/lab-01-Stetsenko/application.html">
+    <meta property="og:type" content="website">
 </head>
 <body class="page">
 
-    <header class="page__header">
-        <a href="index.html" class="site-title">Алгоритми та структури даних</a>
-    </header>
+    <main class="page-grid">
 
-    <aside class="page__sidebar">
-        <h2>Розділи сайту</h2>
-        <nav>
-            <ul>
-                <li><a href="index.html">Головна</a></li>
-                <li><a href="about.html">Про напрям</a></li>
-                <li><a href="pages/resources.html">Ресурси</a></li>
-                <li><a href="pages/entities.html">Символьні сутності</a></li>
-                <li><a href="comparison.html">Порівняння</a></li>
-                <li><a href="gallery.html">Галерея</a></li>
-                <li><a href="contacts.html">Контакти</a></li>
-                <li><a href="application.html" class="active">Подати заявку</a></li>
-            </ul>
-        </nav>
-    </aside>
+        <!-- Шапка сайту та навігація (на всю ширину, 12 колонок) -->
+        <section class="hero span-12">
+            <div class="site-title" style="font-size: clamp(1.75rem, 1.2rem + 2.5vw, 3rem); font-weight: 700; margin-bottom: var(--space-4); text-transform: uppercase; letter-spacing: 1px;">
+                АЛГОРИТМИ ТА СТРУКТУРИ ДАНИХ
+            </div>
+            <nav class="main-nav">
+                <ul class="menu-horizontal">
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="about.html">Про напрям</a></li>
+                    <li><a href="pages/resources.html">Ресурси</a></li>
+                    <li><a href="pages/entities.html">Символьні сутності</a></li>
+                    <li><a href="comparison.html">Порівняння</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="contacts.html">Контакти</a></li>
+                    <li><a href="application.html" style="background-color: rgba(255, 255, 255, 0.2);">Подати заявку</a></li>
+                </ul>
+            </nav>
+        </section>
 
-    <main class="page__main container">
-        <div class="card">
-            <h1>Заявка на участь у проєкті</h1>
+        <!-- Бічна панель: статистика (4 колонки) -->
+        <aside class="aside span-4">
+            <div class="stats">
+                <div class="stats__item">12 алгоритмів</div>
+                <div class="stats__item">8 структур даних</div>
+                <div class="stats__item">25 джерел</div>
+                <div class="stats__item">5 розділів</div>
+            </div>
+        </aside>
 
-            <form action="https://httpbin.org/post" method="post" enctype="multipart/form-data">
+        <!-- Основний контент (8 колонок) -->
+        <section class="content span-8">
+            <div class="card">
+                <h1>Заявка на участь у проєкті</h1>
 
-                <fieldset class="form-fieldset">
-                    <legend>Відомості про учасника</legend>
+                <form action="https://httpbin.org/post" method="post" enctype="multipart/form-data" style="display: flex; flex-direction: column; gap: var(--space-3);">
 
-                    <label for="fullname">Прізвище та ім'я</label>
-                    <input type="text" id="fullname" name="fullname" minlength="5" maxlength="100" autocomplete="name" required>
+                    <fieldset class="form-fieldset" style="border: 1px solid var(--color-border-dark); border-radius: 8px; padding: var(--space-3); display: flex; flex-direction: column; gap: 8px;">
+                        <legend style="font-weight: 700; color: var(--color-primary); padding: 0 5px;">Відомості про учасника</legend>
 
-                    <label for="email">Електронна пошта</label>
-                    <input type="email" id="email" name="email" autocomplete="email" required>
+                        <label for="fullname">Прізвище та ім'я</label>
+                        <input type="text" id="fullname" name="fullname" minlength="5" maxlength="100" autocomplete="name" required style="padding: 8px; border: 1px solid var(--color-border-dark); border-radius: 4px;">
 
-                    <label for="phone">Телефон</label>
-                    <input type="tel" id="phone" name="phone" pattern="\+380\d{9}" title="Формат: +380671234567" autocomplete="tel" required>
+                        <label for="email">Електронна пошта</label>
+                        <input type="email" id="email" name="email" autocomplete="email" required style="padding: 8px; border: 1px solid var(--color-border-dark); border-radius: 4px;">
 
-                    <label for="course">Курс навчання</label>
-                    <input type="number" id="course" name="course" min="1" max="4" step="1" required>
-                </fieldset>
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone" name="phone" pattern="\+380\d{9}" title="Формат: +380671234567" autocomplete="tel" required style="padding: 8px; border: 1px solid var(--color-border-dark); border-radius: 4px;">
 
-                <fieldset>
-                    <legend>Рівень підготовки</legend>
+                        <label for="course">Курс навчання</label>
+                        <input type="number" id="course" name="course" min="1" max="4" step="1" required style="padding: 8px; border: 1px solid var(--color-border-dark); border-radius: 4px;">
+                    </fieldset>
 
-                    <label>
-                        <input type="radio" name="level" value="junior" checked> Початківець
+                    <fieldset style="border: 1px solid var(--color-border-dark); border-radius: 8px; padding: var(--space-3); display: flex; flex-direction: column; gap: 8px;">
+                        <legend style="font-weight: 700; color: var(--color-primary); padding: 0 5px;">Рівень підготовки</legend>
+
+                        <label style="display: flex; align-items: center; gap: 8px;">
+                            <input type="radio" name="level" value="junior" checked style="margin: 0;"> Початківець
+                        </label>
+                        <label style="display: flex; align-items: center; gap: 8px;">
+                            <input type="radio" name="level" value="middle" style="margin: 0;"> Середній
+                        </label>
+                        <label style="display: flex; align-items: center; gap: 8px;">
+                            <input type="radio" name="level" value="senior" style="margin: 0;"> Просунутий
+                        </label>
+                    </fieldset>
+
+                    <fieldset style="border: 1px solid var(--color-border-dark); border-radius: 8px; padding: var(--space-3); display: flex; flex-direction: column; gap: 8px;">
+                        <legend style="font-weight: 700; color: var(--color-primary); padding: 0 5px;">Параметри проєкту</legend>
+
+                        <label for="startdate">Дата початку участі</label>
+                        <input type="date" id="startdate" name="startdate" min="2026-09-15" required style="padding: 8px; border: 1px solid var(--color-border-dark); border-radius: 4px; margin-bottom: 10px;">
+
+                        <p style="margin-top: 0; margin-bottom: 5px; font-weight: 600;">Напрями інтересу:</p>
+
+                        <label style="display: flex; align-items: center; gap: 8px;">
+                            <input type="checkbox" name="interest" value="sorting" style="margin: 0;"> Алгоритми сортування
+                        </label>
+                        <label style="display: flex; align-items: center; gap: 8px;">
+                            <input type="checkbox" name="interest" value="search" style="margin: 0;"> Алгоритми пошуку
+                        </label>
+                        <label style="display: flex; align-items: center; gap: 8px;">
+                            <input type="checkbox" name="interest" value="graphs" style="margin: 0;"> Графи
+                        </label>
+                        <label style="display: flex; align-items: center; gap: 8px; margin-bottom: 10px;">
+                            <input type="checkbox" name="interest" value="trees" style="margin: 0;"> Дерева та структури даних
+                        </label>
+
+                        <label for="stack" style="font-weight: 600;">Технологічний стек</label>
+                        <select id="stack" name="stack" required style="padding: 8px; border: 1px solid var(--color-border-dark); border-radius: 4px;">
+                            <optgroup label="Мови програмування">
+                                <option value="python">Python</option>
+                                <option value="cpp">C++</option>
+                            </optgroup>
+                            <optgroup label="Клієнтські технології">
+                                <option value="html_css">HTML / CSS</option>
+                                <option value="js">JavaScript</option>
+                            </optgroup>
+                        </select>
+                    </fieldset>
+
+                    <fieldset style="border: 1px solid var(--color-border-dark); border-radius: 8px; padding: var(--space-3); display: flex; flex-direction: column; gap: 8px;">
+                        <legend style="font-weight: 700; color: var(--color-primary); padding: 0 5px;">Додаткові дані</legend>
+
+                        <label for="experience">Короткий опис досвіду</label>
+                        <textarea id="experience" name="experience" rows="5" minlength="20" maxlength="500" placeholder="Розкажіть коротко про свій досвід у програмуванні..." style="padding: 8px; border: 1px solid var(--color-border-dark); border-radius: 4px; resize: vertical;"></textarea>
+
+                        <label for="portfolio" style="margin-top: 10px;">Файл із портфоліо (необов'язково)</label>
+                        <input type="file" id="portfolio" name="portfolio" style="padding: 4px;">
+                    </fieldset>
+
+                    <label style="display: flex; align-items: center; gap: 8px; margin: 10px 0;">
+                        <input type="checkbox" name="consent" required style="margin: 0;">
+                        Погоджуюсь на обробку персональних даних
                     </label>
-                    <br>
-                    <label>
-                        <input type="radio" name="level" value="middle"> Середній
-                    </label>
-                    <br>
-                    <label>
-                        <input type="radio" name="level" value="senior"> Просунутий
-                    </label>
-                </fieldset>
 
-                <fieldset>
-                    <legend>Параметри проєкту</legend>
+                    <div style="display: flex; gap: var(--space-2); flex-wrap: wrap;">
+                        <button type="submit" class="btn">Надіслати заявку</button>
+                        <button type="reset" class="btn" style="background: var(--color-border-dark); color: var(--color-text);">Очистити форму</button>
+                        <button type="button" id="preview-btn" class="btn" style="background: var(--color-accent);">Попередній перегляд</button>
+                    </div>
 
-                    <label for="startdate">Дата початку участі</label>
-                    <input type="date" id="startdate" name="startdate" min="2026-09-15" required>
+                </form>
+            </div>
+        </section>
 
-                    <p style="margin-bottom: var(--space-1);">Напрями інтересу:</p>
-
-                    <label>
-                        <input type="checkbox" name="interest" value="sorting"> Алгоритми сортування
-                    </label>
-                    <br>
-                    <label>
-                        <input type="checkbox" name="interest" value="search"> Алгоритми пошуку
-                    </label>
-                    <br>
-                    <label>
-                        <input type="checkbox" name="interest" value="graphs"> Графи
-                    </label>
-                    <br>
-                    <label>
-                        <input type="checkbox" name="interest" value="trees"> Дерева та структури даних
-                    </label>
-                    <br><br>
-
-                    <label for="stack">Технологічний стек</label>
-                    <select id="stack" name="stack" required>
-                        <optgroup label="Мови програмування">
-                            <option value="python">Python</option>
-                            <option value="cpp">C++</option>
-                        </optgroup>
-                        <optgroup label="Клієнтські технології">
-                            <option value="html_css">HTML / CSS</option>
-                            <option value="js">JavaScript</option>
-                        </optgroup>
-                    </select>
-                </fieldset>
-
-                <fieldset>
-                    <legend>Додаткові дані</legend>
-
-                    <label for="experience">Короткий опис досвіду</label>
-                    <textarea id="experience" name="experience" rows="5" minlength="20" maxlength="500" placeholder="Розкажіть коротко про свій досвід у програмуванні..."></textarea>
-
-                    <label for="portfolio">Файл із портфоліо (необов'язково)</label>
-                    <input type="file" id="portfolio" name="portfolio">
-                </fieldset>
-
-                <label style="display: flex; align-items: center; gap: 8px; margin: var(--space-4) 0;">
-                    <input type="checkbox" name="consent" required style="margin: 0;">
-                    Погоджуюсь на обробку персональних даних
-                </label>
-
-                <div style="display: flex; gap: var(--space-2); flex-wrap: wrap;">
-                    <button type="submit" class="btn">Надіслати заявку</button>
-                    <button type="reset" class="btn">Очистити форму</button>
-                    <button type="button" id="preview-btn" class="btn">Попередній перегляд</button>
-                </div>
-
-            </form>
-        </div>
     </main>
 
     <footer class="page__footer">
@@ -139,5 +155,6 @@
         </address>
         <p>&copy; 2026 Стеценко Вікторія</p>
     </footer>
+
 </body>
 </html>

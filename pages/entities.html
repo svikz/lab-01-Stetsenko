@@ -2,58 +2,82 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Довідник символьних сутностей HTML з кодами та прикладами використання для веброзробників.">
     <title>Символьні сутності HTML: довідник</title>
     <link rel="stylesheet" href="../css/style.css">
+    
+    <!-- Додано канонічне посилання та Open Graph метадані -->
+    <link rel="canonical" href="https://svikz.github.io/lab-01-Stetsenko/pages/entities.html">
+    <meta property="og:title" content="Символьні сутності - Основи алгоритмів">
+    <meta property="og:description" content="Довідник символьних сутностей HTML з кодами та прикладами використання для веброзробників.">
+    <meta property="og:image" content="https://svikz.github.io/lab-01-Stetsenko/img/og-preview.jpg">
+    <meta property="og:url" content="https://svikz.github.io/lab-01-Stetsenko/pages/entities.html">
+    <meta property="og:type" content="website">
 </head>
 
 <body class="page">
     
-    <header class="page__header">
-        <a href="../index.html" class="site-title">Алгоритми та структури даних</a>
-    </header>
+    <main class="page-grid">
 
-    <aside class="page__sidebar">
-        <h2>Розділи сайту</h2>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Головна</a></li>
-                <li><a href="../about.html">Про напрям</a></li>
-                <li><a href="resources.html">Ресурси</a></li>
-                <li><a href="entities.html" class="active">Символьні сутності</a></li>
-                <li><a href="../comparison.html">Порівняння</a></li>
-                <li><a href="../gallery.html">Галерея</a></li>
-                <li><a href="../contacts.html">Контакти</a></li>
-                <li><a href="../application.html">Подати заявку</a></li>
-            </ul>
-        </nav>
-    </aside>
-
-    <main class="page__main container">
-        <h1>Символьні сутності HTML</h1>
-
-        <section class="card">
-            <h2>Що таке символьні сутності?</h2>
-            <p>
-                Символьні сутності HTML — це спеціальні коди, які використовуються для відображення символів, що мають особливе значення в HTML або не можуть бути введені безпосередньо.
-            </p>
-
-            <h2>Приклади символьних сутностей</h2>
-            <ul>
-                <li>&amp; — амперсанд (&)</li>
-                <li>&lt; — менше (<)</li>
-                <li>&gt; — більше (>)</li>
-                <li>&quot; — подвійна лапка (")</li>
-                <li>&apos; — одинарна лапка (')</li>
-                <li>&copy; — знак авторського права (©)</li>
-                <li>&reg; — знак зареєстрованої торгової марки (®)</li>
-                <li>&euro; — євро (€)</li>
-            </ul>
-
-            <p>
-                Використання символьних сутностей дозволяє уникнути конфліктів з HTML-тегами та забезпечує правильне відображення спеціальних символів на вебсторінках.
-            </p>
+        <!-- Шапка сайту та навігація (на всю ширину, 12 колонок) -->
+        <section class="hero span-12">
+            <div class="site-title" style="font-size: clamp(1.75rem, 1.2rem + 2.5vw, 3rem); font-weight: 700; margin-bottom: var(--space-4); text-transform: uppercase; letter-spacing: 1px;">
+                АЛГОРИТМИ ТА СТРУКТУРИ ДАНИХ
+            </div>
+            <nav class="main-nav">
+                <ul class="menu-horizontal">
+                    <li><a href="../index.html">Головна</a></li>
+                    <li><a href="../about.html">Про напрям</a></li>
+                    <li><a href="resources.html">Ресурси</a></li>
+                    <li><a href="entities.html" style="background-color: rgba(255, 255, 255, 0.2);">Символьні сутності</a></li>
+                    <li><a href="../comparison.html">Порівняння</a></li>
+                    <li><a href="../gallery.html">Галерея</a></li>
+                    <li><a href="../contacts.html">Контакти</a></li>
+                    <li><a href="../application.html">Подати заявку</a></li>
+                </ul>
+            </nav>
         </section>
+
+        <!-- Бічна панель: статистика та заклик до дії (4 колонки) -->
+        <aside class="aside span-4">
+            <div class="stats">
+                <div class="stats__item">12 алгоритмів</div>
+                <div class="stats__item">8 структур даних</div>
+                <div class="stats__item">25 джерел</div>
+                <div class="stats__item">5 розділів</div>
+            </div>
+            <a href="../application.html" class="cta-button">Подати заявку</a>
+        </aside>
+
+        <!-- Основний контент (8 колонок) -->
+        <section class="content span-8">
+            <article class="card">
+                <h1 style="margin-top: 0;">Символьні сутності HTML</h1>
+
+                <h2 style="margin-top: var(--space-4);">Що таке символьні сутності?</h2>
+                <p>
+                    Символьні сутності HTML — це спеціальні коди, які використовуються для відображення символів, що мають особливе значення в HTML або не можуть бути введені безпосередньо.
+                </p>
+
+                <h2 style="margin-top: var(--space-4);">Приклади символьних сутностей</h2>
+                <ul>
+                    <li>&amp; — амперсанд (&)</li>
+                    <li>&lt; — менше (<)</li>
+                    <li>&gt; — більше (>)</li>
+                    <li>&quot; — подвійна лапка (")</li>
+                    <li>&apos; — одинарна лапка (')</li>
+                    <li>&copy; — знак авторського права (©)</li>
+                    <li>&reg; — знак зареєстрованої торгової марки (®)</li>
+                    <li>&euro; — євро (€)</li>
+                </ul>
+
+                <p>
+                    Використання символьних сутностей дозволяє уникнути конфліктів з HTML-тегами та забезпечує правильне відображення спеціальних символів на вебсторінках.
+                </p>
+            </article>
+        </section>
+
     </main>
 
     <footer class="page__footer">
