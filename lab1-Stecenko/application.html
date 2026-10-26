@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Заявка на участь у навчальному проєкті з алгоритмів, програмування та структур даних.">
+    <meta name="author" content="Віка Стеценко">
+    <title>Заявка на участь у проєкті</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page">
+
+    <header class="page__header">
+        <a href="index.html" class="site-title">Алгоритми та структури даних</a>
+    </header>
+
+    <aside class="page__sidebar">
+        <h2>Розділи сайту</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html">Про напрям</a></li>
+                <li><a href="pages/resources.html">Ресурси</a></li>
+                <li><a href="pages/entities.html">Символьні сутності</a></li>
+                <li><a href="comparison.html">Порівняння</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+                <li><a href="application.html" class="active">Подати заявку</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="page__main container">
+        <div class="card">
+            <h1>Заявка на участь у проєкті</h1>
+
+            <form action="https://httpbin.org/post" method="post" enctype="multipart/form-data">
+
+                <fieldset class="form-fieldset">
+                    <legend>Відомості про учасника</legend>
+
+                    <label for="fullname">Прізвище та ім'я</label>
+                    <input type="text" id="fullname" name="fullname" minlength="5" maxlength="100" autocomplete="name" required>
+
+                    <label for="email">Електронна пошта</label>
+                    <input type="email" id="email" name="email" autocomplete="email" required>
+
+                    <label for="phone">Телефон</label>
+                    <input type="tel" id="phone" name="phone" pattern="\+380\d{9}" title="Формат: +380671234567" autocomplete="tel" required>
+
+                    <label for="course">Курс навчання</label>
+                    <input type="number" id="course" name="course" min="1" max="4" step="1" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Рівень підготовки</legend>
+
+                    <label>
+                        <input type="radio" name="level" value="junior" checked> Початківець
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="level" value="middle"> Середній
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="level" value="senior"> Просунутий
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Параметри проєкту</legend>
+
+                    <label for="startdate">Дата початку участі</label>
+                    <input type="date" id="startdate" name="startdate" min="2026-09-15" required>
+
+                    <p style="margin-bottom: var(--space-1);">Напрями інтересу:</p>
+
+                    <label>
+                        <input type="checkbox" name="interest" value="sorting"> Алгоритми сортування
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="interest" value="search"> Алгоритми пошуку
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="interest" value="graphs"> Графи
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="interest" value="trees"> Дерева та структури даних
+                    </label>
+                    <br><br>
+
+                    <label for="stack">Технологічний стек</label>
+                    <select id="stack" name="stack" required>
+                        <optgroup label="Мови програмування">
+                            <option value="python">Python</option>
+                            <option value="cpp">C++</option>
+                        </optgroup>
+                        <optgroup label="Клієнтські технології">
+                            <option value="html_css">HTML / CSS</option>
+                            <option value="js">JavaScript</option>
+                        </optgroup>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Додаткові дані</legend>
+
+                    <label for="experience">Короткий опис досвіду</label>
+                    <textarea id="experience" name="experience" rows="5" minlength="20" maxlength="500" placeholder="Розкажіть коротко про свій досвід у програмуванні..."></textarea>
+
+                    <label for="portfolio">Файл із портфоліо (необов'язково)</label>
+                    <input type="file" id="portfolio" name="portfolio">
+                </fieldset>
+
+                <label style="display: flex; align-items: center; gap: 8px; margin: var(--space-4) 0;">
+                    <input type="checkbox" name="consent" required style="margin: 0;">
+                    Погоджуюсь на обробку персональних даних
+                </label>
+
+                <div style="display: flex; gap: var(--space-2); flex-wrap: wrap;">
+                    <button type="submit" class="btn">Надіслати заявку</button>
+                    <button type="reset" class="btn">Очистити форму</button>
+                    <button type="button" id="preview-btn" class="btn">Попередній перегляд</button>
+                </div>
+
+            </form>
+        </div>
+    </main>
+
+    <footer class="page__footer">
+        <address>
+            Стеценко Вікторія група КН-21<br>
+            <a href="mailto:viktoriastecenko@gmail.com">viktoriastecenko@gmail.com</a><br>
+            <a href="tel:+380673456789">+38 (067) 345-67-89</a>
+        </address>
+        <p>&copy; 2026 Стеценко Вікторія</p>
+    </footer>
+</body>
+</html>
