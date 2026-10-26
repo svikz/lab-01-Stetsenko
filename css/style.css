@@ -375,3 +375,12 @@ figcaption {
     text-transform: uppercase;
     letter-spacing: 0.05em;
 }
+/* Примусове обмеження ширини зображень у картках */
+.card img,
+.card picture,
+.card figure {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-inline: auto;
+}
