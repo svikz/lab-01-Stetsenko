@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://svikz.github.io/lab-01-Stetsenko/sitemap.xml
