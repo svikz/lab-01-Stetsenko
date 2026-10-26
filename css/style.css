@@ -351,3 +351,27 @@ pre {
     html { scroll-behavior: auto; }
     *, *::before, *::after { transition: none; animation: none; }
 }
+
+/* ==========================================================================
+   11. АДАПТИВНІ ЗОБРАЖЕННЯ ТА ГАЛЕРЕЯ
+   ========================================================================== */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px; /* Невелике заокруглення кутів для естетики */
+}
+
+figure {
+    margin: 0 0 var(--space-3) 0;
+}
+
+figcaption {
+    text-align: center;
+    color: var(--color-text-muted);
+    font-size: 0.85rem;
+    margin-top: var(--space-2);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
