@@ -35,7 +35,7 @@
 }
 
 /* ==========================================================================
-   1. СКИДАННЯ СТИЛІВ ТА БОКСОВА МОДЕЛЬ
+1. СКИДАННЯ СТИЛІВ ТА БОКСОВА МОДЕЛЬ
    ========================================================================== */
 
 *,
@@ -69,6 +69,13 @@
     --space-4: 1.5rem;  
     --space-5: 2rem;    
     --space-6: 3rem;    
+    
+    /* Добавленные токены для Кроку 1 */
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 12px;
+    --shadow-sm: 0 2px 4px rgb(0 0 0 / 5%);
+    --shadow-md: 0 4px 10px rgb(0 0 0 / 4%);
 }
 
 /* ==========================================================================
@@ -166,7 +173,7 @@ pre {
         url("../img/originals/pic-1.jpg") center / cover no-repeat;
     color: var(--color-white);
     padding: var(--space-5) var(--space-4);
-    border-radius: 12px;
+    border-radius: var(--radius-lg);
     text-align: center;
     box-shadow: 0 4px 12px rgb(0 0 0 / 10%);
 }
@@ -193,7 +200,7 @@ pre {
     font-weight: 600;
     text-decoration: none;
     padding: var(--space-1) var(--space-2);
-    border-radius: 6px;
+    border-radius: var(--radius-sm);
     transition: background-color 0.2s;
 }
 
@@ -221,11 +228,11 @@ pre {
     background: var(--color-primary-soft);
     color: var(--color-primary);
     padding: var(--space-3);
-    border-radius: 10px;
+    border-radius: var(--radius-md);
     font-weight: 700;
     text-align: center;
     border: 1px solid var(--color-border);
-    box-shadow: 0 2px 4px rgb(0 0 0 / 5%);
+    box-shadow: var(--shadow-sm);
 }
 
 /* ==========================================================================
@@ -243,13 +250,13 @@ pre {
     padding: var(--space-5);
     border: 1px solid var(--color-border);
     border-left: 5px solid var(--color-primary); 
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgb(0 0 0 / 4%);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
     transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 .card h2:first-child {
-    margin-top: 0; /* Прибираємо зайвий відступ у першого заголовка в картці */
+    margin-top: 0; 
 }
 
 .card:hover { 
@@ -268,7 +275,7 @@ pre {
     background: var(--color-primary);
     color: var(--color-white);
     border: 1px solid transparent;
-    border-radius: 10px;
+    border-radius: var(--radius-md);
     text-decoration: none;
     font-weight: 700;
     text-transform: uppercase;
@@ -294,7 +301,7 @@ pre {
     color: var(--color-white);
     padding: var(--space-4) var(--space-3);
     text-align: center;
-    margin-top: auto; /* Притискає футер донизу екрану */
+    margin-top: auto; 
 }
 
 .page__footer a { 
@@ -311,9 +318,7 @@ pre {
    10. АДАПТИВНІСТЬ ТА МЕДІА-ЗАПИТИ (RESPONSIVE)
    ========================================================================== */
 
-/* Для планшетів та мобільних пристроїв */
 @media (max-width: 992px) {
-    /* Блоки стають один під одним, займаючи всі 12 колонок */
     .span-8, 
     .span-4 { 
         grid-column: span 12; 
@@ -360,7 +365,7 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
-    border-radius: 6px; /* Невелике заокруглення кутів для естетики */
+    border-radius: var(--radius-sm); 
 }
 
 figure {
@@ -375,7 +380,7 @@ figcaption {
     text-transform: uppercase;
     letter-spacing: 0.05em;
 }
-/* Примусове обмеження ширини зображень у картках */
+
 .card img,
 .card picture,
 .card figure {
